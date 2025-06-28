@@ -1,0 +1,130 @@
+@import "header";
+@import "pop_callkn_1_2_0";
+@import "pop_regkn_1_3_0";
+@import "style-min";
+@import "main";
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  @media (max-width: 430px){
+    font-size: 15px;
+  }
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+.screen1,
+.screen1 .container,
+.screen2,
+.screen2 .container,
+.screen3,
+.screen3 .container,
+.screen4,
+.screen4 .container,
+.screen5,
+.screen5 .container{
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.regist {
+  text-align: center;
+  background: linear-gradient(to top, #ff572a 0%, #f75d0a 73%, #ff8f52 100%);
+  color: #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 20px;
+  box-shadow: 0 0 0 0 #e0610b;
+  animation: won 1.4s cubic-bezier(1, 0.5, 0.5, 10) infinite;
+  outline: none;
+  border: none;
+}
+@keyframes won {
+  to {
+    box-shadow: 0 0 0 10px rgba(232, 76, 61, 0);
+  }
+}
+
+.regft {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+  &__btn {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      @media (max-width: 375px) {
+        margin-right: 5px;
+      }
+    }
+    &:nth-child(1) {
+      margin: 10px 5px 10px 10px;
+      background-color: #9c7235;
+      box-shadow: 0px 3px 0px 0px #794903;
+    }
+    &:nth-child(2) {
+      margin: 10px 10px 10px 5px;
+      margin-right: 10px;
+      background: #dc8027;
+      box-shadow: 0px 2px 0px 0px #9c7235;
+    }
+  }
+  @media (max-width: 768px) {
+    display: flex;
+  }
+  @media (max-width: 320px) {
+    a {
+      font-size: 12px;
+    }
+  }
+}
+
+.modal-header{
+  text-transform: uppercase;
+}
+.modal-body{
+  >p{
+    margin-bottom: 3px;
+  }
+}
+
+.form-group{
+  margin-bottom: 10px;
+  &.invalid{
+    input{
+      border: 1px solid red;
+    }
+  }
+}
+.form-message{
+  color: red;
+  font-size: 13px;
+  font-style: italic;
+}
