@@ -1,5 +1,5 @@
 .screen1 {
-  background-image: url("../images/page1-bg.jpg?ver=1");
+  background-image: url("../images/page1-bg.jpg?ver=2");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,7 +96,7 @@
 
 .screen2 {
   &.loaded {
-    background-image: url("../images/page2-bg.jpg?ver=1");
+    background-image: url("../images/page2-bg.jpg?ver=2");
   }
   background-position: center top;
   background-repeat: no-repeat;
@@ -185,8 +185,10 @@
     font-weight: 600;
     font-size: 28px;
     color: #f75d0a;
+    line-height: 1.2;
     span {
       color: #0a53bc;
+      text-transform: uppercase;
     }
   }
   &__title {
@@ -354,7 +356,8 @@
   }
   &__name{
     color: #0a53bc;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
   }
   &__price{
     color: #f75d0a;
