@@ -217,6 +217,10 @@
       font-weight: 600;
     }
   }
+  &__btn{
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 
 .screen4 {
@@ -368,6 +372,10 @@
     color: #f75d0a;
     font-size: 18px;
     text-decoration: line-through;
+  }
+  &__btn{
+    text-align: center;
+    margin-top: 15px;
   }
   @media (max-width: 430px) {
     &__list{
